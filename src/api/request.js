@@ -2,9 +2,10 @@
 import axios from "axios";
 
 // 引入进度条
-// import nprogress from 'nprogress';
-// // 引入进度条样式
-// import "nprogress/nprogress.css";
+import nprogress from 'nprogress';
+// 引入进度条样式
+import "nprogress/nprogress.css";
+console.log(nprogress);
 
 
 // 1.利用axios对象的方法create，创建一个axios实例
@@ -12,7 +13,7 @@ import axios from "axios";
 const requests = axios.create({
     // 配置对象
     // 基础路径，发请求的事情，路径当中会出现api
-    baseURL: "/api",
+    baseURL: "http://gmall-h5-api.atguigu.cn/api",
     // 代表请求超时的时间5S
     timeout: 5000,
 });
